@@ -1,0 +1,739 @@
+/* =========================
+   GOOGLE FONT & RESET
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#f8f9fc;
+    color:#333;
+    line-height:1.6;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+/* =========================
+        NAVBAR
+========================= */
+
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    background:#ffffff;
+    box-shadow:0 2px 15px rgba(0,0,0,.08);
+    z-index:1000;
+}
+
+.navbar{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    width:90%;
+    margin:auto;
+
+    height:75px;
+
+}
+
+.logo{
+
+    font-size:28px;
+    font-weight:700;
+
+    color:#2563eb;
+
+}
+
+.nav-links{
+
+    display:flex;
+    list-style:none;
+
+}
+
+.nav-links li{
+
+    margin-left:30px;
+
+}
+
+.nav-links a{
+
+    text-decoration:none;
+    color:#333;
+
+    font-weight:500;
+
+    transition:.3s;
+
+}
+
+.nav-links a:hover{
+
+    color:#2563eb;
+
+}
+
+.menu-btn{
+
+    display:none;
+
+    font-size:28px;
+
+    cursor:pointer;
+
+}
+
+/* =========================
+         HERO
+========================= */
+.hero{
+    min-height:100vh;
+    background:
+        linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+        url("images/hero.jpg");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+
+/* =========================
+         STATISTICS
+========================= */
+
+.stats{
+    padding:80px 0;
+    background:linear-gradient(135deg,#2563eb,#7c3aed);
+}
+
+.stats .container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:30px;
+}
+
+.stat-box{
+    text-align:center;
+    color:white;
+}
+
+.stat-box h2{
+    font-size:50px;
+    margin-bottom:10px;
+}
+
+.stat-box p{
+    font-size:18px;
+}
+
+/* =========================
+       RESPONSIVE
+========================= */
+
+@media(max-width:992px){
+
+.hero h1{
+font-size:45px;
+}
+
+.hero p{
+font-size:18px;
+}
+
+}
+
+@media(max-width:768px){
+
+.nav-links{
+display:none;
+}
+
+.menu-btn{
+display:block;
+}
+
+.hero h1{
+font-size:36px;
+}
+
+.hero p{
+font-size:17px;
+}
+
+section{
+padding:70px 20px;
+}
+
+}
+
+@media(max-width:480px){
+
+.logo{
+font-size:24px;
+}
+
+.hero h1{
+font-size:30px;
+}
+
+.hero p{
+font-size:16px;
+}
+
+.btn{
+display:block;
+margin:15px auto;
+width:220px;
+}
+
+.stat-box h2{
+font-size:36px;
+}
+
+}
+
+/* ================= ABOUT ================= */
+
+.about{
+    padding:100px 0;
+    background:#fff;
+}
+
+.about-container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:60px;
+    flex-wrap:wrap;
+}
+
+.about-image{
+    flex:1;
+}
+
+.about-image img{
+    width:100%;
+    border-radius:20px;
+    box-shadow:0 15px 40px rgba(0,0,0,.15);
+}
+
+.about-content{
+    flex:1;
+}
+
+.about-content h2{
+    font-size:42px;
+    margin-bottom:20px;
+    color:#1e293b;
+}
+
+.about-content p{
+    color:#555;
+    margin-bottom:20px;
+    font-size:17px;
+    text-align:justify;
+}
+
+.portfolio-card img{
+width:100%;
+height:250px;
+object-fit:cover;
+border-radius:20px;
+transition:.4s;
+}
+
+.portfolio-card:hover img{
+
+transform:scale(1.08);
+
+}
+
+.team-img{
+
+width:120px;
+
+height:120px;
+
+border-radius:50%;
+
+object-fit:cover;
+
+margin-bottom:20px;
+
+border:5px solid #2563eb;
+
+}
+
+.contact-info{
+
+text-align:center;
+
+margin-bottom:40px;
+
+}
+
+.contact-info p{
+
+margin:15px;
+
+font-size:18px;
+
+}
+
+.contact-info i{
+
+color:#2563eb;
+
+margin-right:10px;
+
+}
+
+
+/* ================= FOOTER ================= */
+
+.footer{
+
+background:#0f172a;
+color:white;
+padding:70px 0 20px;
+
+}
+
+.footer-container{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:40px;
+
+}
+
+.footer-box h2,
+.footer-box h3{
+
+margin-bottom:20px;
+
+}
+
+.footer-box p{
+
+color:#cbd5e1;
+margin-bottom:10px;
+
+}
+
+.footer-box a{
+
+display:block;
+text-decoration:none;
+color:#cbd5e1;
+margin:10px 0;
+transition:.3s;
+
+}
+
+.footer-box a:hover{
+
+color:#60a5fa;
+padding-left:8px;
+
+}
+
+.footer hr{
+
+margin:40px 0 20px;
+
+border:none;
+
+height:1px;
+
+background:#334155;
+
+}
+
+.copyright{
+
+text-align:center;
+
+color:#cbd5e1;
+
+}
+
+/* Scroll Button */
+
+#topBtn{
+
+position:fixed;
+
+bottom:25px;
+
+right:25px;
+
+width:50px;
+
+height:50px;
+
+border:none;
+
+border-radius:50%;
+
+background:#2563eb;
+
+color:white;
+
+font-size:22px;
+
+cursor:pointer;
+
+display:none;
+
+box-shadow:0 8px 20px rgba(0,0,0,.25);
+
+transition:.3s;
+
+}
+
+#topBtn:hover{
+
+background:#1d4ed8;
+
+transform:translateY(-5px);
+
+}
+
+
+/* ===== NAVBAR ACTIVE ===== */
+
+.nav-links a{
+
+position:relative;
+
+}
+
+.nav-links a::after{
+
+content:"";
+
+position:absolute;
+
+left:0;
+
+bottom:-8px;
+
+width:0;
+
+height:3px;
+
+background:#2563eb;
+
+transition:.4s;
+
+border-radius:10px;
+
+}
+
+.nav-links a:hover::after{
+
+width:100%;
+
+}
+
+/* ===== CARD ANIMATION ===== */
+
+.service-card,
+.team-card,
+.why-box,
+.portfolio-card,
+.testimonial-card{
+
+opacity:0;
+
+transform:translateY(40px);
+
+animation:fadeUp .8s ease forwards;
+
+}
+
+.service-card:nth-child(2){animation-delay:.2s;}
+.service-card:nth-child(3){animation-delay:.4s;}
+.service-card:nth-child(4){animation-delay:.6s;}
+.service-card:nth-child(5){animation-delay:.8s;}
+.service-card:nth-child(6){animation-delay:1s;}
+
+@keyframes fadeUp{
+
+from{
+
+opacity:0;
+
+transform:translateY(40px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+.hero h1{
+
+background:linear-gradient(90deg,#ffffff,#dbeafe);
+
+-webkit-background-clip:text;
+
+-webkit-text-fill-color:transparent;
+
+}
+
+.service-card{
+
+backdrop-filter:blur(12px);
+
+border:1px solid rgba(255,255,255,.2);
+
+}
+
+.btn{
+
+box-shadow:0 10px 25px rgba(37,99,235,.35);
+
+}
+
+.btn:hover{
+
+transform:translateY(-6px) scale(1.05);
+
+}
+
+.team-card:hover{
+
+background:#2563eb;
+
+color:white;
+
+}
+
+.team-card:hover p{
+
+color:white;
+
+}
+
+.portfolio-card{
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+.overlay{
+
+position:absolute;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+height:100%;
+
+background:rgba(37,99,235,.75);
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+opacity:0;
+
+transition:.4s;
+
+}
+
+.overlay h3{
+
+color:white;
+
+font-size:28px;
+
+}
+
+.portfolio-card:hover .overlay{
+
+opacity:1;
+
+}
+
+body{
+
+animation:pageLoad .8s;
+
+}
+
+@keyframes pageLoad{
+
+from{
+
+opacity:0;
+
+}
+
+to{
+
+opacity:1;
+
+}
+
+}
+
+.contact{
+
+padding:100px 0;
+
+background:#f8f9fc;
+
+}
+
+.contact-container{
+
+display:grid;
+
+grid-template-columns:1fr 1.2fr;
+
+gap:60px;
+
+align-items:center;
+
+}
+
+.contact-info h3{
+
+font-size:30px;
+
+margin-bottom:20px;
+
+color:#2563eb;
+
+}
+
+.contact-info p{
+
+font-size:18px;
+
+margin:20px 0;
+
+}
+
+.contact-info i{
+
+color:#2563eb;
+
+margin-right:12px;
+
+font-size:20px;
+
+}
+
+.contact-form form{
+
+display:flex;
+
+flex-direction:column;
+
+}
+
+.contact-form input,
+.contact-form textarea{
+
+width:100%;
+
+padding:15px;
+
+margin-bottom:20px;
+
+border:1px solid #ddd;
+
+border-radius:10px;
+
+font-size:16px;
+
+outline:none;
+
+}
+
+.contact-form textarea{
+
+resize:none;
+
+}
+
+.contact-form button{
+
+width:100px;
+
+}
+
+@media(max-width:768px){
+
+.contact-container{
+
+grid-template-columns:1fr;
+
+}
+
+.contact-form button{
+
+width:50%;
+
+}
+
+}
+
+.hero-buttons{
+
+margin-top:30px;
+
+}
+
+.btn-outline{
+
+background:transparent;
+
+border:2px solid white;
+
+margin-left:15px;
+
+}
+
+.btn-outline:hover{
+
+background:white;
+
+color:#2563eb;
+
+}
